@@ -72,5 +72,5 @@ iex "& { $(irm 'https://raw.githubusercontent.com/clemichou1/millennium-installe
 
 ## Credits
 
-* **clem.la** (Discord)
+* **[clem.la](https://discord.com/users/868170669412745216)** (Discord)
 * Original Millennium project by [SteamClientHomebrew](https://github.com/SteamClientHomebrew)
