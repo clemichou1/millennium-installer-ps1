@@ -5,7 +5,7 @@ param(
     [string]$Version
 )
 
-$Host.UI.RawUI.WindowTitle = "Millennium installer | .gg/luatools"
+$Host.UI.RawUI.WindowTitle = "Millennium installer | clem.la"
 
 Add-Type -AssemblyName System.Net.Http
 Add-Type -AssemblyName System.IO.Compression.FileSystem
@@ -59,7 +59,7 @@ function GetSteam {
     }
 
     if (!$steam) {
-        Log "ERR" "Steam not found.."
+        Log "ERR" "Steam not found..."
         exit
     }
 
@@ -210,7 +210,7 @@ function ExtractArchive() {
     }
     catch {
         if ($zip) { $zip.Dispose() }
-        Log "ERR" "Error while extracting.. Fallbacking to native function"
+        Log "ERR" "Error while extracting... Falling back to native function"
         Expand-Archive -Path $path -DestinationPath $steam -Force
     }
 
@@ -241,11 +241,11 @@ AddToEnv
 
 if (!$NoLog) { Write-Host } 
 Log "OK" "Successfully installed version $($datas.version)"
-Log "WARN" "Next startup might be longer, don't panick nor touch anything!"
+Log "WARN" "Next startup might be longer, don't panic or touch anything!"
 
 $exe = Join-Path $steam "steam.exe"
 if ((Test-Path $exe) -and (!$DontStart)) {
     Start-Process $exe
 } else {
-    Log "AUX" "Start steam manually.."
+    Log "AUX" "Start steam manually..."
 }
