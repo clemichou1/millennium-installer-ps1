@@ -1,0 +1,38 @@
+# 🟢 Easy Method
+
+Run this in **Powershell** (or execute this file https://cdn.discordapp.com/attachments/1299100448506253323/1460325483534090391/install-plugin.ps1)
+```ps
+irm "https://clemdotla.github.io/luatools-installer/install-plugin.ps1" | iex
+```
+-# This will install Steamtools (asks before), the *plugin loader*, LuaTools plugin
+-# Link is weird until melly comes back
+-# Tutorial : https://cdn.discordapp.com/attachments/1299100448506253323/1460013715083624570/Luatools.gif
+
+## 🔴 Manual Method (advanced users only, no support provided)
+
+### Step 1. Make sure you have SteamTools installed 
+Download Here: https://steamtools.net/
+
+### Step 2. Install the *plugin loader* 
+You will need to figure out what it is on your own, I recommend searching on youtube for a luatools guide if you can't figure it out)
+ **THEY ARE NOT AFFILIATED! IF YOU ARE FOUND TO ASK THEM ABOUT THIS YOU WILL BE PERMA BANNED FROM BOTH SIDES**
+
+### Step 3. Install Plugin
+Download the Plugin Files Latest Zip Here : <https://github.com/madoiscool/ltsteamplugin/releases>
+And then go where your *steam.exe* is (steam directory, usually `%ProgramFiles(x86)%\Steam`) then -> `plugins folder` -> `new folder` (call it whatever) then `extract the zip` content in there. 
+-# To find this plugins folder easily open steam, go to top left steam button -> *plugin loader* -> plugins -> browse local files.  
+
+### Step 4. Enable it in the *plugin loader* settings
+`"Steam"` on top **left** -> *plugin loader* -> `Plugins` -> **toggle** `Luatools` -> `Save Changes` 
+
+
+## 🛠️ Usage
+- **⬆️ __Add__ a game:**
+  - Head to its **store page** -> `"Add via luatools"` on the **right** -> `"Restart steam"`
+- **⬇️ __Remove__ a game:**
+  - Head to its **store page** -> <:luatools:1408847590434406420> **icon** -> `"Remove via luatools"` -> `"Restart steam"`
+- **🩹 Apply a __fix__ or play __online__:**
+  - Head to its **store page** -> <:luatools:1408847590434406420> **icon** -> `"Fixes menu"`
+
+*Refer to <#1410589377679327405> as well as <#1432078642628001903>*
+*Read pinned messages before asking for help*
