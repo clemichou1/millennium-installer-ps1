@@ -24,7 +24,7 @@ The script automatically:
 ### Install / update to the latest version
 
 ```ps
-irm "https://raw.githubusercontent.com/clemichou1/millennium-installer-ps1/refs/heads/main/millennium.ps1" | iex
+irm "https://raw.githubusercontent.com/clemdotla/millennium-installer-ps1/refs/heads/main/millennium.ps1" | iex
 ```
 
 ---
@@ -45,19 +45,19 @@ irm "https://raw.githubusercontent.com/clemichou1/millennium-installer-ps1/refs/
 ### Install a specific version
 
 ```ps
-iex "& { $(irm 'https://raw.githubusercontent.com/clemichou1/millennium-installer-ps1/refs/heads/main/millennium.ps1') } -Version 'v2.31.1'"
+iex "& { $(irm 'https://raw.githubusercontent.com/clemdotla/millennium-installer-ps1/refs/heads/main/millennium.ps1') } -Version 'v2.31.1'"
 ```
 
 ### Silent install (no logs, do not start Steam)
 
 ```ps
-iex "& { $(irm 'https://raw.githubusercontent.com/clemichou1/millennium-installer-ps1/refs/heads/main/millennium.ps1') } -NoLog -DontStart"
+iex "& { $(irm 'https://raw.githubusercontent.com/clemdotla/millennium-installer-ps1/refs/heads/main/millennium.ps1') } -NoLog -DontStart"
 ```
 
 ### Custom Steam path
 
 ```ps
-iex "& { $(irm 'https://raw.githubusercontent.com/clemichou1/millennium-installer-ps1/refs/heads/main/millennium.ps1') } -SteamPath 'E:\\Steam'"
+iex "& { $(irm 'https://raw.githubusercontent.com/clemdotla/millennium-installer-ps1/refs/heads/main/millennium.ps1') } -SteamPath 'E:\\Steam'"
 ```
 
 ---
