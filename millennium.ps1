@@ -5,7 +5,7 @@ param(
     [string]$Version
 )
 
-$Host.UI.RawUI.WindowTitle = "Millennium installer | clem.la"
+if (!$NoLog) { $Host.UI.RawUI.WindowTitle = "Millennium installer | clem.la" }
 
 Add-Type -AssemblyName System.Net.Http
 Add-Type -AssemblyName System.IO.Compression.FileSystem
