@@ -1,5 +1,6 @@
 param(
     [switch]$NoLog,
+    [switch]$NoWarn,
     [switch]$DontStart,
     [string]$SteamPath,
     [string]$Version
@@ -241,7 +242,9 @@ AddToEnv
 
 if (!$NoLog) { Write-Host } 
 Log "OK" "Successfully installed version $($datas.version)"
-Log "WARN" "Next startup might be longer, don't panic or touch anything!"
+if (!$NoWarn) { 
+    Log "WARN" "Next startup might be longer, don't panic or touch anything!"
+}
 
 $exe = Join-Path $steam "steam.exe"
 if ((Test-Path $exe) -and (!$DontStart)) {
